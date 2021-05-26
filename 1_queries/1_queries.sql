@@ -11,5 +11,3 @@ select name id, cohort_id from students where end_date is null order by cohort_i
 select name, email, phone from students where end_date is not null and github is null;
 
 SELECT sum(assignment_submissions.duration) as total_duration FROM assignment_submissions JOIN students ON students.id = student_id WHERE students.name = 'Ibrahim Schimmel';
-
-SELECT sum(assignment_submissions.duration) as total_duration FROM assignment_submissions JOIN students ON students.id = student_id JOIN cohorts ON cohorts.id = cohort_id WHERE cohorts.name = 'FEB12';
